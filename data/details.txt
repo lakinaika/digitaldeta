@@ -1,0 +1,9 @@
+1. home page logo.
+2.work portfolio
+3.motto /about us
+4.companies we worked with with thier logo and about them little bit.
+5.clients testimonials.
+6.services we provide,content detailing our services in a dedocated web page like our work section.
+7.our top works
+8.footer.
+9.all work images ( at least 3-4 ) and thumbnail

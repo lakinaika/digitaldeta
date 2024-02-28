@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Home from "./Pages/Home";
+import Work from "./Pages/Work";
+import PageNotFound from "./Pages/PageNotFound";
+import WorkSinglePage from "./Components/WorkSinglePage";
+import Academy from "./Pages/Academy";
+import ScrollToTop from "./Components/ScrollToTop";
+import Webdevelopment from "./Pages/Webdevelopment";
+import WebDesign from "./Pages/WebDesign";
+import GraphicDesign from "./Pages/GraphicDesign";
+import Marketing from "./Pages/Marketing";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <ScrollToTop/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/work/:slug" element={<WorkSinglePage />} />
+        <Route path="*" element={<PageNotFound />} />
+        <Route path="/academy" element={<Academy/>}/>
+        <Route path="/program/web-development" element={<Webdevelopment/>}/>
+        <Route path="/program/strategic-marketing-using-ai" element={<Marketing/>}/>
+        <Route path="/program/graphic-design" element={<GraphicDesign/>}/>
+        <Route path="/program/web-design" element={<WebDesign/>}/>
+      </Routes>
+
+    </>
   );
 }
 

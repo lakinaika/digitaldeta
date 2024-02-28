@@ -1,0 +1,7 @@
+1.Heading and sib heading for every individual program detail page.
+
+2.Course description with syllabus
+
+3. FAQs of every Course
+
+4. student review. with student name

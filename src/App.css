@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tai+Le&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600&display=swap');
+
+
+
+.scrollshadow {
+  box-shadow: 0 -14rem 101rem rgb(34, 31, 177), 0 -5rem 5rem rgb(34, 31, 177);
+}
+.scrollshadowwhite {
+  box-shadow: 0 -14rem 101rem rgb(255, 255, 255), 0 -5rem 5rem rgb(255, 255, 255);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.antonfont {
+  font-family: "Anton", sans-serif !important;
+}
+.down-arrow-icons-wrapper{
+  animation: down 1.2s ease infinite;
+}
+@keyframes down {
+  0%,100%{
+    transform: translateY(0px);
+  }  
+  50%{
+    transform: translateY(10px);
+  }  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mono_sans{
+  font-family: 'Noto Sans Tai Le', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* .section_2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.568)),url('./images/section_2_bg.jpg');
+  background-size: cover;
+  background-position: center;
+} */
+
+.ibm-sans{
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.program-card{
+  transition: all 0.7s;
+}
+.program-card:hover{
+  box-shadow: rgba(14, 6, 135, 0.3) 0px 19px 38px, rgba(48, 5, 149, 0.22) 0px 15px 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.why-digital-deta{
+  background-image: linear-gradient(rgba(29, 0, 175, 0.838),rgba(54, 1, 200, 0.687)),url('https://img.freepik.com/free-photo/steel-texture_1194-6527.jpg?w=900&t=st=1706177203~exp=1706177803~hmac=0a9da77ae79173c9af8e0c66e8ad376ea7e3f2cb1793d185938c0fb241a30cb8');
+  background-size: cover;
+  background-position: center;
 }
